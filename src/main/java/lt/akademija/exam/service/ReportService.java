@@ -10,6 +10,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
+ * Service class to perform various
+ *
  * Created by Juozas on 2017-06-22.
  */
 @Service

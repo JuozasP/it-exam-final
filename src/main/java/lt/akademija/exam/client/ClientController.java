@@ -45,19 +45,29 @@ public class ClientController {
     }
 
     @PostMapping("/api/clients/{id}")
-    public Client addNewInventory(@PathVariable Long id, @RequestBody @Valid InventoryEntity inventoryEntity) {
-        logger.info("client id: " + id + " new inventory add " + inventoryEntity);
+    public Client addNewInventory(@PathVariable Long id, String name, int sector, double weight) {
+        logger.info("client id: " + id + " new inventory add " );
+        InventoryEntity inventoryEntity = new InventoryEntity();
+        inventoryEntity.setName(name);
+        inventoryEntity.setSector(sector);
+        inventoryEntity.setWeight(weight);
         return clientRepository.addInventory(id, inventoryEntity);
     }
 
     @PostMapping("/api/clients/delete/{id}")
-    public Client removeInventory(@PathVariable Long id, @RequestBody @Valid InventoryEntity inventoryEntity) {
+    public Client removeInventory(@PathVariable Long id, @RequestBody InventoryEntity inventoryEntity) {
         logger.info("client id: " + id + "  inventory removed " + inventoryEntity);
+        InventoryEntity naujas = new InventoryEntity();
         return clientRepository.removeInventory(id,inventoryEntity);
     }
 
     @GetMapping("/api/clients/service/inventory/{id}")
     public Integer inventoryCount(@PathVariable Long id){
         return reportService.findClientCount(clientRepository.findById(id));
+    }
+    @GetMapping("/api/clients/{}")
+    public Client getSingleClient(@PathVariable Long id) {
+        logger.info("client controller called");
+        return clientRepository.findById(id);
     }
 }

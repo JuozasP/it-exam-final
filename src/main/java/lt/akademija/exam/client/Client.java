@@ -34,7 +34,7 @@ public class Client {
 
     private String clientType;
 
-    @OneToMany
+    @OneToMany(cascade=CascadeType.ALL)
     private List<InventoryEntity> inventoryEntity;
 
     public Client() {

@@ -1,16 +1,17 @@
 package lt.akademija.exam.inventory;
 
+import lt.akademija.exam.client.Client;
 import org.hibernate.validator.constraints.Length;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
 /**
+ *
+ *
  * Created by Juozas on 2017-06-22.
  */
 @Entity
@@ -28,7 +29,7 @@ public class InventoryEntity {
     @Max(40)
     private int sector;
 
-    private Long userId;
+
 
     private Date placedDate;
 
@@ -74,4 +75,6 @@ public class InventoryEntity {
 
     public InventoryEntity() {
     }
+
+
 }

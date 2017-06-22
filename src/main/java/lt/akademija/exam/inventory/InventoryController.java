@@ -7,6 +7,8 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
+ * Class used to control Inventory Rest services
+ *
  * Created by Juozas on 2017-06-22.
  */
 @RestController

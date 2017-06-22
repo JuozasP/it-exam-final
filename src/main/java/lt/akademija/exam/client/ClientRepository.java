@@ -1,6 +1,7 @@
 package lt.akademija.exam.client;
 
 import lt.akademija.exam.inventory.InventoryEntity;
+import lt.akademija.exam.inventory.InventoryRepository;
 import lt.akademija.exam.service.ReportService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,8 @@ public class ClientRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-
+    @Autowired
+    InventoryRepository inventoryRepository;
 
     @Transactional(readOnly = true)
     public Client get(Long id) {
@@ -53,11 +55,13 @@ public class ClientRepository {
     public Client addInventory(Long id, InventoryEntity addedInventory) {
         Client client = entityManager.find(Client.class, id);
         List<InventoryEntity> inventory = new ArrayList<>();
+        inventoryRepository.save(addedInventory);
         inventory.addAll(client.getInventoryEntity());
         inventory.add(addedInventory);
         client.setInventoryEntity(inventory);
         entityManager.persist(client);
         return client;
+
     }
 
     public Client removeInventory(Long id, InventoryEntity addedInventory) {
