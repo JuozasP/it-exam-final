@@ -90,6 +90,11 @@ public class ReportService {
         return sortedMap;
     }
 
-
+    public Integer findClientCount(Client client){
+        if(findFiveClientsWithSumIventoryCount().containsKey(client)){
+            return findFiveClientsWithSumIventoryCount().get(client);
+        }
+        return 0;
+    }
 
 }

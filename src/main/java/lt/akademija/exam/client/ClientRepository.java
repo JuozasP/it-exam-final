@@ -1,7 +1,9 @@
 package lt.akademija.exam.client;
 
 import lt.akademija.exam.inventory.InventoryEntity;
+import lt.akademija.exam.service.ReportService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +15,8 @@ import java.util.List;
 import java.util.ListIterator;
 
 /**
+ * Class used to query in memory database for client entity
+ *
  * @author ggrazevicius
  */
 @Repository
@@ -22,6 +26,7 @@ public class ClientRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
+
 
 
     @Transactional(readOnly = true)
@@ -66,6 +71,10 @@ public class ClientRepository {
             }
         }
         return client;
+    }
+
+    public Client findById(Long id){
+        return entityManager.find(Client.class, id);
     }
 
 }

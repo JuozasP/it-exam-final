@@ -2,6 +2,7 @@ package lt.akademija.exam.client;
 
 import io.swagger.annotations.ApiOperation;
 import lt.akademija.exam.inventory.InventoryEntity;
+import lt.akademija.exam.service.ReportService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +10,11 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+
+
+/**
+ Class used to control client Rest services
+ */
 @RestController
 public class ClientController {
 
@@ -16,7 +22,8 @@ public class ClientController {
     private ClientRepository clientRepository;
 
     final static Logger logger = Logger.getLogger(ClientController.class);
-
+    @Autowired
+    private ReportService reportService;
 
     @GetMapping("/api/clients")
     @ApiOperation(value = "Returns all flights that are currently in the list")
@@ -47,5 +54,10 @@ public class ClientController {
     public Client removeInventory(@PathVariable Long id, @RequestBody @Valid InventoryEntity inventoryEntity) {
         logger.info("client id: " + id + "  inventory removed " + inventoryEntity);
         return clientRepository.removeInventory(id,inventoryEntity);
+    }
+
+    @GetMapping("/api/clients/service/inventory/{id}")
+    public Integer inventoryCount(@PathVariable Long id){
+        return reportService.findClientCount(clientRepository.findById(id));
     }
 }
