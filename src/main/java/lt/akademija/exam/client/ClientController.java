@@ -45,12 +45,11 @@ public class ClientController {
     }
 
     @PostMapping("/api/clients/{id}")
-    public Client addNewInventory(@PathVariable Long id, String name, int sector, double weight) {
+    public Client addNewInventory(@PathVariable Long id, String name) {
         logger.info("client id: " + id + " new inventory add " );
         InventoryEntity inventoryEntity = new InventoryEntity();
+        inventoryEntity.setSector(1);
         inventoryEntity.setName(name);
-        inventoryEntity.setSector(sector);
-        inventoryEntity.setWeight(weight);
         return clientRepository.addInventory(id, inventoryEntity);
     }
 

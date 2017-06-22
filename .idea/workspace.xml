@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24fe25fe-4bf5-4f6f-8649-ddef1668cc23" name="Default" comment="Added inventory entity, repository and REST controller">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lt/akademija/exam/client/Client.class" afterPath="$PROJECT_DIR$/target/classes/lt/akademija/exam/client/Client.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ServiceController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lt/akademija/exam/client/ClientController.class" afterPath="$PROJECT_DIR$/target/classes/lt/akademija/exam/client/ClientController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lt/akademija/exam/client/ClientRepository.class" afterPath="$PROJECT_DIR$/target/classes/lt/akademija/exam/client/ClientRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lt/akademija/exam/inventory/InventoryController.class" afterPath="$PROJECT_DIR$/target/classes/lt/akademija/exam/inventory/InventoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lt/akademija/exam/inventory/InventoryEntity.class" afterPath="$PROJECT_DIR$/target/classes/lt/akademija/exam/inventory/InventoryEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lt/akademija/exam/service/ReportService.class" afterPath="$PROJECT_DIR$/target/classes/lt/akademija/exam/service/ReportService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/Client.java" afterPath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/Client.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/ClientController.java" afterPath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/ClientController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/ClientRepository.java" afterPath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/ClientRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/inventory/InventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/inventory/InventoryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/inventory/InventoryEntity.java" afterPath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/inventory/InventoryEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ReportService.java" afterPath="$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ReportService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/bundle.js" />
     </list>
     <ignored path="react-exam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +34,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/ClientController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ServiceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bundle.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/bundle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,16 +71,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bundle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/bundle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,8 +113,8 @@
       <file leaf-file-name="ReportService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ReportService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="115">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,7 +166,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/inventory/InventoryEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
-              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#606#607#0" expanded="true" />
@@ -186,16 +190,6 @@
                 <element signature="e#1219#1220#0" expanded="true" />
                 <element signature="e#1263#1264#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client_creation_component.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/client_creation_component.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="43" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -241,6 +235,7 @@
         <option value="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/lt/akademija/exam/inventory/InventoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ServiceController.java" />
       </list>
     </option>
   </component>
@@ -978,7 +973,7 @@
       <updated>1497905318924</updated>
       <workItem from="1497905323390" duration="5250000" />
       <workItem from="1497989878669" duration="520000" />
-      <workItem from="1498108591570" duration="18312000" />
+      <workItem from="1498108591570" duration="19767000" />
     </task>
     <task id="LOCAL-00001" summary="Added inventory entity, repository and REST controller">
       <created>1498110088280</created>
@@ -998,7 +993,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24082000" />
+    <option name="totallyTimeSpent" value="25537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1350,29 +1345,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ReportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1389,7 +1366,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/inventory/InventoryEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#606#607#0" expanded="true" />
@@ -1474,8 +1451,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/client/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lt/akademija/exam/service/ServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
