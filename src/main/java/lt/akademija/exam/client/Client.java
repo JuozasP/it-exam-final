@@ -1,8 +1,11 @@
 package lt.akademija.exam.client;
 
+import lt.akademija.exam.inventory.InventoryEntity;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author ggrazevicius
@@ -23,12 +26,14 @@ public class Client {
     @NotNull
     private String lastName;
 
-    @NotNull
     private Date dateOfBirth;
 
     private String phoneNumber;
 
     private String clientType;
+
+    @OneToMany
+    private List<InventoryEntity> inventoryEntity;
 
     public Client() {
     }
@@ -79,5 +84,13 @@ public class Client {
 
     public void setClientType(String clientType) {
         this.clientType = clientType;
+    }
+
+    public List<InventoryEntity> getInventoryEntity() {
+        return inventoryEntity;
+    }
+
+    public void setInventoryEntity(List<InventoryEntity> inventoryEntity) {
+        this.inventoryEntity = inventoryEntity;
     }
 }

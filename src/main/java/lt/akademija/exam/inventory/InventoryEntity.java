@@ -1,8 +1,13 @@
 package lt.akademija.exam.inventory;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 /**
@@ -19,7 +24,11 @@ public class InventoryEntity {
 
     private double weight;
 
+    @Min(1)
+    @Max(40)
     private int sector;
+
+    private Long userId;
 
     private Date placedDate;
 
